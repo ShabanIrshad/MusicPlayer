@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7babe0c410.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="header-div">
+           <div id="logo">
+            <!-- <img src="images/music-player.png" id="logo-image" alt="title-image"> -->
+             
+            <h1 id="title-name">MyPlayList&nbsp;<i class="fa-solid fa-headphones"></i></h1>
+            
+           </div>
+           <div id="toggle-div">
+                <div id="toggle-background">
+                    <div id="toggle-btn"></div>
+                  
+                </div>
+                  <p id="theme-text">&nbsp;Light</p>
+                
+           </div>
+            
+            
+        </div>
+        
+        
+    </header>
+    <main>
+        <div id="all-song-div">
+           
+            <span id="genre-list">Filter By Genre : <select id="select" >
+                <option>All</option>
+            </select></span>
+            <h2>All songs</h2>
+            <div id="song-list">
+                
+            </div>
+        </div>
+        <div id="song-card">
+            <figure>
+                <img id="image" src="images\betheone.jpeg" alt="Album_Picture"/>
+                 <h2 id="song-name">Song Name</h2>
+                <p id="artist-name">Artist Name</p>               
+            </figure>
+            <div id="audio-control">
+                <audio id="song">
+                    <source id="song-source" src="Songs/OneKissDuaLipa.mp3" type="audio/mpeg"/>
+                </audio>
+            <div id="progress-div">
+                 <p id="start-duration">11</p><input type="range" value="0" id="progress"/><p id="end-duration">11</p>
+            </div>
+            <div id="button-container">
+                 <div id="previous"> <i class="fa-solid fa-backward"></i></div>
+                 <div onclick="playPause()"> <i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                 <div id="next"> <i class="fa-solid fa-forward"></i></div>
+            </div>
+            <div id="add-to-playlist">
+                <p>Add to playlist...&nbsp;&nbsp;<span><i id="add-btn" class="fa-solid fa-square-plus"></i></span></p>
+            </div>
+            </div>
+        </div>
+        <div id="playlist-div">
+            <div id="playlist-header">
+                <input type="text" id="playlist-input" placeholder="Enter playlist name">
+                <button id="playlist-btn">Create Playlist</button>
+            </div>
+            <div id="playlist-body">
+                <div id="current-playlist">
+                    
+                    <h4 class="heading">Current Playlist</h4>
+                    <p id="playlistName"></p>
+                    <div id="element-container">
+                        
+                    </div>
+                   
+                </div>
+
+                <div id="all-playlist">
+                    <h4 class="heading">All Playlist</h4>
+                    <div id="playlist-buttons">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
