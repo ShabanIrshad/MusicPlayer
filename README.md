@@ -1,4 +1,4 @@
-![Certificate Achieved](https://github.com/ShabanIrshad/SQLDataAnalyics/blob/main/ShripritiEdu/CertificateOfAchievement.png)
+![Certificate Achieved](https://github.com/ShabanIrshad/MusicPlayer/blob/main/images/screenShot.png)
 # MusicPlayer
 ## Functionalities OR Modules
 This project consist of three major functionalities.
